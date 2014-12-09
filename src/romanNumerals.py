@@ -25,27 +25,37 @@ class romanNumerals(object):
             return True
         else:
             return False
+        
+    def letterToNumber(self, letter):
+        if letter == 'M':
+            return 1000
+        elif letter == 'D':
+            return 500
+        elif letter == 'C':
+            return 100
+        elif letter == 'L':
+            return 50
+        elif letter == 'X':
+            return 10
+        elif letter == 'V':
+            return 5
+        elif letter == 'I':
+            return 1
+        else:
+            return -1
             
         
     def ConvertToArabic(self, romanNumber):
         if(self.ValidateRomanNumber(romanNumber)):
-            suma = 0
+            total = 0
+            romanNumber = list(romanNumber)
             for i in romanNumber:
-                if i == 'M':
-                    suma += 1000
-                elif i == 'D':
-                    suma += 500
-                elif i == 'C':
-                    suma += 100
-                elif i == 'L':
-                    suma += 50
-                elif i == 'X':
-                    suma += 10
-                elif i == 'V':
-                    suma += 5
+                number = self.letterToNumber(i)
+                if number >= romanNumber[i+1]:
+                    suma = total + number
                 else:
-                    suma += 1
+                    suma = total - number
                     
-            return suma
+            return total
         else:
-            return 'Not a valid number'
+            return "Not a valid number"

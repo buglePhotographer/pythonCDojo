@@ -47,17 +47,17 @@ class Test(unittest.TestCase):
         
     def test_five(self):
         x = romanNumerals.romanNumerals()
-        self.assertEqual(x.ConvertToArabic('IIII'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('VV'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('XXXX'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('LL'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('CCCC'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('DD'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('IIIV'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('MMMMM'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('DM'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('XXL'),"Not a valid number")
-        self.assertEqual(x.ConvertToArabic('VVX'),"Not a valid number")
+        self.assertEqual(x.ConvertToArabic('IIII'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('VV'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('XXXX'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('LL'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('CCCC'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('DD'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('IIIV'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('MMMMM'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('DM'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('XXL'), "Not a valid number")
+        self.assertEqual(x.ConvertToArabic('VVX'), "Not a valid number")
         
 
 
